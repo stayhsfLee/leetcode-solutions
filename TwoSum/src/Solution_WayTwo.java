@@ -35,7 +35,7 @@ public class Solution {
             if(arr[target-nums[i]-sMin]==-1)
                 arr[nums[i]-sMin]=i;
             else
-                return new int[]{arr[nums[i]-sMin+1],i};
+                return new int[]{arr[target-nums[i]-sMin],i};
         }
         return new int[]{0,0};
     }
