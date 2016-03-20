@@ -76,12 +76,10 @@ public class Solution {
             return null;
         }
         else{
-            if(carry)
-            {
+            if(carry){
                 l1.val++;
                 carry=false;
-                if(l1.val>9)
-                {
+                if(l1.val>9){
                     carry=true;
                     l1.val=l1.val-10;
                     l1.next=OneNumCarryForward(l1.next);
