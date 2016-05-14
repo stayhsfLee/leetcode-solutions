@@ -1,7 +1,7 @@
 public class Solution {
     int max=0;
     //从一端开始查找回文字符串
-    public static String longestPalindrome(String s) {
+    public String longestPalindrome(String s) {
 
         int length=s.length();
         //下面这个变量判断是否找到的是哪种回文串
