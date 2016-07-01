@@ -1,4 +1,6 @@
-public class Solution {
+package LongestSubstringWithoutRepeatingCharacters.src;
+
+public class LongestSubstringWithoutRepeatingCharacters {
     //95 integer vars to show if current char had been showed
     //each integet stores the location of the last same char in the arr 
     int[] repeat_char=new int[95];

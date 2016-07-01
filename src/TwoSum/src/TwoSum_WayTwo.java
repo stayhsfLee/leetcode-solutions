@@ -1,4 +1,6 @@
-public class Solution {
+package TwoSum.src;
+
+public class TwoSum_WayTwo {
     public int[] twoSum(int[] nums, int target) {
         //the formula is x1 + x2 = target
         //the way_one can't perform well in a large array so here is the way two 

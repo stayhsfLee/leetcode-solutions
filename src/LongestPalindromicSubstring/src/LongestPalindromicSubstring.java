@@ -1,4 +1,6 @@
-public class Solution {
+package LongestPalindromicSubstring.src;
+
+public class LongestPalindromicSubstring{
     int max=0;
     //从一端开始查找回文字符串
     public String longestPalindrome(String s) {

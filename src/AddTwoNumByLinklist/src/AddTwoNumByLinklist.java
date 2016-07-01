@@ -6,7 +6,9 @@
  *     ListNode(int x) { val = x; }
  * }
  */
-public class Solution {
+package AddTwoNumByLinklist.src;
+
+public class AddTwoNumByLinklist {
     boolean carry=false;
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         //nnum--the val in the every node
@@ -88,4 +90,11 @@ public class Solution {
             return l1;
         }
     }
+}
+
+class ListNode {
+    int val;
+    ListNode next;
+    ListNode(int x) { val = x; }
+
 }

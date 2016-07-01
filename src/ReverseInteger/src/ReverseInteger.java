@@ -1,4 +1,6 @@
-public class Solution {
+package ReverseInteger.src;
+
+public class ReverseInteger {
     boolean isNegative=false;
     public   int  reverse(int x) {
 
