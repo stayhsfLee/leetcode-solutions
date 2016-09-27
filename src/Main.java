@@ -1,9 +1,10 @@
 import PalindromeNumber.src.PalindromeNumber;
+import RegularExpressionMatching.src.RegularExpressionMatching;
 import StringToInteger.src.*;
 
 public class Main{
     public static void main(String[] args) {
-        PalindromeNumber p = new PalindromeNumber();
-        System.out.println(p.isPalindrome(-2147483648));
+        RegularExpressionMatching r=new RegularExpressionMatching();
+        System.out.println(r.isMatch("ab",".*c"));
     }
 }
