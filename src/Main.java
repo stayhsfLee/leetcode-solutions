@@ -2,10 +2,12 @@ import LongestCommonPrefix.src.LongestCommonPrefix;
 import PalindromeNumber.src.PalindromeNumber;
 import RegularExpressionMatching.src.RegularExpressionMatching;
 import StringToInteger.src.*;
+import ThreeSum.src.ThreeSum;
 
 public class Main{
     public static void main(String[] args) {
-        LongestCommonPrefix longestCommonPrefix =new LongestCommonPrefix();
-        System.out.println(longestCommonPrefix.longestCommonPrefix(new String[]{"aa",""}));
+        int[] nums = new int[]{-2,0,1,1,2};
+        ThreeSum threeSum = new ThreeSum();
+        System.out.println(threeSum.threeSum(nums));
     }
 }
