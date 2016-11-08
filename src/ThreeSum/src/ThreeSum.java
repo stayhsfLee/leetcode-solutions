@@ -16,7 +16,7 @@ public class ThreeSum {
      * @param nums
      * @return
      */
-    public List<List<Integer>> threeSum(int[] nums) {
+    public List<List<Integer>> threeSum0(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
 
         int[] ltArray = new int[nums.length];
@@ -220,5 +220,59 @@ public class ThreeSum {
         }
 
         return new int[]{zeroNum,lt_itor,gt_itor};
+    }
+
+
+    /**
+     * the second way
+     * @param nums
+     * @return
+     */
+    public List<List<Integer>> threeSum(int[] nums) {
+        Arrays.sort(nums);
+
+        int length = nums.length;
+
+        List<List<Integer>> res = new ArrayList<>();
+        List<Integer> temp ;
+
+        for(int i=0;i<length -2;i++){
+
+            if(nums[i] > 0){
+                break;
+            }
+
+            int leftIndex = i+1;
+            int rightIndex = length - 1;
+
+            while(leftIndex < rightIndex){
+                int sum = nums[i] + nums[leftIndex] + nums[rightIndex];
+
+                if(sum > 0){
+                    rightIndex--;
+                }else if(sum < 0){
+                    leftIndex++;
+                }else{
+                    temp = new ArrayList<>();
+                    temp.add(nums[i]);
+                    temp.add(nums[leftIndex]);
+                    temp.add(nums[rightIndex]);
+                    res.add(temp);
+
+                    while(leftIndex+1 < length && nums[leftIndex] == nums[leftIndex+1]){
+                        leftIndex++;
+                    }
+                    leftIndex++;
+                    rightIndex--;
+                }
+            }
+
+            while(i+1 < length && nums[i] == nums[i+1]) {
+                i++;
+            }
+
+        }
+
+        return res;
     }
 }

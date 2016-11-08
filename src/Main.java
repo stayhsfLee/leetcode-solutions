@@ -6,7 +6,7 @@ import ThreeSum.src.ThreeSum;
 
 public class Main{
     public static void main(String[] args) {
-        int[] nums = new int[]{-2,0,1,1,2};
+        int[] nums = new int[]{-2,0,0,2,2};
         ThreeSum threeSum = new ThreeSum();
         System.out.println(threeSum.threeSum(nums));
     }
