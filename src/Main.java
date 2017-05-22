@@ -1,6 +1,7 @@
 import IslandPerimeter.src.IslandPerimeter;
 import LetterCombinationsOfPhoneNumbers.src.LetterCombinations;
 import LongestCommonPrefix.src.LongestCommonPrefix;
+import LongestSubstringWithoutRepeatingCharacters.src.LongestSubstringWithoutRepeatingCharacters_WayTwo;
 import PalindromeNumber.src.PalindromeNumber;
 import RegularExpressionMatching.src.RegularExpressionMatching;
 import RemoveNthNodeFromEndofList.src.ListNode;
@@ -64,12 +65,7 @@ public class Main{
 //        int s = islandPerimeter.islandPerimeter(grid);
 //        System.out.println(s);
 
-        ListNode node1 = new ListNode(1);
-        ListNode node2 = new ListNode(2);
-
-        node1.next = node2;
-
-        RemoveNthNodeFromEndList removeNthNodeFromEndList = new RemoveNthNodeFromEndList();
-        System.out.println(removeNthNodeFromEndList.removeNthFromEnd(node1,2));
+        LongestSubstringWithoutRepeatingCharacters_WayTwo l = new LongestSubstringWithoutRepeatingCharacters_WayTwo();
+        System.out.println(l.lengthOfLongestSubstring("aaaa"));
     }
 }
