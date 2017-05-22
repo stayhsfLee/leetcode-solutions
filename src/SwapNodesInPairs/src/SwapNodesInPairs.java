@@ -12,11 +12,10 @@ public class SwapNodesInPairs {
             return head;
         }
 
-        int i=1;
-
         ListNode temp = head;
-        head = head.next;
         ListNode temptail = null;
+
+        head = head.next;
 
         while(temp != null){
             ListNode first = temp;
@@ -34,9 +33,9 @@ public class SwapNodesInPairs {
             //修改和前端的链接
             if(temptail != null){
                 temptail.next = second;
-                temptail = first;
             }
 
+            temptail = first;
             temp = third;
         }
 
