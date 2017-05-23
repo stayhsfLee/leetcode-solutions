@@ -5,6 +5,7 @@ import LongestSubstringWithoutRepeatingCharacters.src.LongestSubstringWithoutRep
 import PalindromeNumber.src.PalindromeNumber;
 import RegularExpressionMatching.src.RegularExpressionMatching;
 import RemoveDuplicatesfromSortedArray.src.RemoveDuplicatesfromSortedArray;
+import RemoveElement.src.RemoveElement;
 import RemoveNthNodeFromEndofList.src.ListNode;
 import RemoveNthNodeFromEndofList.src.RemoveNthNodeFromEndList;
 import StringToInteger.src.*;
@@ -68,9 +69,9 @@ public class Main{
 //        int s = islandPerimeter.islandPerimeter(grid);
 //        System.out.println(s);
 
-        RemoveDuplicatesfromSortedArray r = new RemoveDuplicatesfromSortedArray();
-        int[] as = new int[]{};
-        int res = r.removeDuplicates(as);
+        RemoveElement removeElement = new RemoveElement();
+        int[] as = new int[]{3,3};
+        int res = removeElement.removeElement(as,3);
         System.out.println(res+" "+ Arrays.toString(as));
     }
 }
