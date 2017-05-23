@@ -4,10 +4,13 @@ import LongestCommonPrefix.src.LongestCommonPrefix;
 import LongestSubstringWithoutRepeatingCharacters.src.LongestSubstringWithoutRepeatingCharacters_WayTwo;
 import PalindromeNumber.src.PalindromeNumber;
 import RegularExpressionMatching.src.RegularExpressionMatching;
+import RemoveDuplicatesfromSortedArray.src.RemoveDuplicatesfromSortedArray;
 import RemoveNthNodeFromEndofList.src.ListNode;
 import RemoveNthNodeFromEndofList.src.RemoveNthNodeFromEndList;
 import StringToInteger.src.*;
 import ThreeSum.src.ThreeSum;
+
+import java.util.Arrays;
 
 public class Main{
 
@@ -65,7 +68,9 @@ public class Main{
 //        int s = islandPerimeter.islandPerimeter(grid);
 //        System.out.println(s);
 
-        LongestSubstringWithoutRepeatingCharacters_WayTwo l = new LongestSubstringWithoutRepeatingCharacters_WayTwo();
-        System.out.println(l.lengthOfLongestSubstring("aaaa"));
+        RemoveDuplicatesfromSortedArray r = new RemoveDuplicatesfromSortedArray();
+        int[] as = new int[]{};
+        int res = r.removeDuplicates(as);
+        System.out.println(res+" "+ Arrays.toString(as));
     }
 }
