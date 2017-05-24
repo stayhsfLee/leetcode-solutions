@@ -1,3 +1,4 @@
+import DivideTwoIntegers.src.DivideTwoIntegers;
 import IslandPerimeter.src.IslandPerimeter;
 import LetterCombinationsOfPhoneNumbers.src.LetterCombinations;
 import LongestCommonPrefix.src.LongestCommonPrefix;
@@ -69,9 +70,7 @@ public class Main{
 //        int s = islandPerimeter.islandPerimeter(grid);
 //        System.out.println(s);
 
-        RemoveElement removeElement = new RemoveElement();
-        int[] as = new int[]{3,3};
-        int res = removeElement.removeElement(as,3);
-        System.out.println(res+" "+ Arrays.toString(as));
+        DivideTwoIntegers divideTwoIntegers = new DivideTwoIntegers();
+        System.out.println(divideTwoIntegers.divide(-1,1));
     }
 }
