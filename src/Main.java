@@ -10,6 +10,7 @@ import RemoveElement.src.RemoveElement;
 import RemoveNthNodeFromEndofList.src.ListNode;
 import RemoveNthNodeFromEndofList.src.RemoveNthNodeFromEndList;
 import StringToInteger.src.*;
+import SubstringwithConcatenationofAllWords.src.SubstringwithConcatenationofAllWords;
 import ThreeSum.src.ThreeSum;
 
 import java.util.Arrays;
@@ -70,7 +71,7 @@ public class Main{
 //        int s = islandPerimeter.islandPerimeter(grid);
 //        System.out.println(s);
 
-        DivideTwoIntegers divideTwoIntegers = new DivideTwoIntegers();
-        System.out.println(divideTwoIntegers.divide(-1,1));
+        SubstringwithConcatenationofAllWords s = new SubstringwithConcatenationofAllWords();
+        System.out.println(s.findSubstring("abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab",new String[]{"ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba"}));
     }
 }
