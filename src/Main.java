@@ -3,6 +3,7 @@ import IslandPerimeter.src.IslandPerimeter;
 import LetterCombinationsOfPhoneNumbers.src.LetterCombinations;
 import LongestCommonPrefix.src.LongestCommonPrefix;
 import LongestSubstringWithoutRepeatingCharacters.src.LongestSubstringWithoutRepeatingCharacters_WayTwo;
+import NextPermutation.src.NextPermutation;
 import PalindromeNumber.src.PalindromeNumber;
 import RegularExpressionMatching.src.RegularExpressionMatching;
 import RemoveDuplicatesfromSortedArray.src.RemoveDuplicatesfromSortedArray;
@@ -71,7 +72,9 @@ public class Main{
 //        int s = islandPerimeter.islandPerimeter(grid);
 //        System.out.println(s);
 
-        SubstringwithConcatenationofAllWords s = new SubstringwithConcatenationofAllWords();
-        System.out.println(s.findSubstring("abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab",new String[]{"ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba","ab","ba"}));
+        NextPermutation nextPermutation = new NextPermutation();
+        int[] nums = new int[]{1,3,2};
+        nextPermutation.nextPermutation(nums);
+        System.out.println(Arrays.toString(nums));
     }
 }
