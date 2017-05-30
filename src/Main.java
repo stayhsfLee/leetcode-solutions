@@ -11,6 +11,7 @@ import RemoveDuplicatesfromSortedArray.src.RemoveDuplicatesfromSortedArray;
 import RemoveElement.src.RemoveElement;
 import RemoveNthNodeFromEndofList.src.ListNode;
 import RemoveNthNodeFromEndofList.src.RemoveNthNodeFromEndList;
+import SearchInsertPosition.src.SearchInsertPosition;
 import SearchforaRange.src.SearchforaRange;
 import SearchinRotatedSortedArray.src.SearchinRotatedSortedArray;
 import StringToInteger.src.*;
@@ -75,8 +76,8 @@ public class Main{
 //        int s = islandPerimeter.islandPerimeter(grid);
 //        System.out.println(s);
 
-        SearchforaRange s = new SearchforaRange();
-        int[] nums = new int[]{2,2};
-        System.out.println(s.searchRange(nums,4));
+        SearchInsertPosition s = new SearchInsertPosition();
+        int[] nums = new int[]{1};
+        System.out.println(s.searchInsert(nums,0));
     }
 }
