@@ -43,9 +43,44 @@ public class LongestCommonPrefix {
         return result;
 
         
-        /*
-           way two
-         */
 
+
+    }
+
+
+    /**
+     * Another way
+     */
+    public String longestCommonPrefixAnotherWay(String[] strs) {
+
+        if (strs.length == 0) {
+            return "";
+        }
+        if (strs.length == 1) {
+            return strs[0];
+        }
+
+        String result = strs[0];
+
+        for (int i = 1; i < strs.length; i++) {
+            if(!strs[i].startsWith(result)){
+                char[] cs = result.toCharArray();
+
+                int end = strs[i].length() > cs.length ? cs.length : strs[i].length();
+                int j=0;
+                for(; j<end;j++ ){
+                    if(cs[j] != strs[i].charAt(j)){
+                        break;
+                    }
+                }
+
+                if(j == 0){
+                    return "";
+                }
+                result = result.substring(0, j);
+            }
+        }
+
+        return result;
     }
 }
