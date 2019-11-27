@@ -3,7 +3,7 @@
 *.iml
 
 # Mac
-.DS_STORE
+**/.DS_STORE
 
 # Maven
 target/
